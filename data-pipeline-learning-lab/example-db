@@ -1,5 +1,0 @@
-CREATE TABLE weather (
-	temp text NOT NULL,
-	pressure text NOT NULL,
-	dt text NOT NULL
-);
