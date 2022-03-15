@@ -1,7 +1,8 @@
 #########################################################################################
-# Final project web app
-# This is a completed application that is ready for hosting
-# this goal of seeing this process is to tie together all
+# Final Project Web App
+# This is a completed application that is ready for hosting.
+# This product is the type of thing your data workforce will deliver.
+# This goal of seeing this process is to tie together all
 # of the components we have seen over the course
 # 1. data pipelines provide data that we can then store for later use
 # 2. we can use that data for insight and model development
