@@ -1,6 +1,6 @@
 # BUS -282
 
-Code and Directions for **Learning Lab** assignments in Stanford Course BUS 282 - [Leading Data Driven Organizations.](https://online.stanford.edu/courses/csp-xbus282w-leading-data-driven-organizations). Students can find instructions within the relevant folders in this repo.
+Code and Directions for **Learning Lab** assignments in Stanford Course BUS 282 - [Leading Data Driven Organizations](https://online.stanford.edu/courses/csp-xbus282w-leading-data-driven-organizations). Students can find instructions within the relevant folders in this repo.
 
 * **Data Pipeline Learning Lab:** A simple script that demonstrates an example data pipeline. This example includes the code, dependencies, API call, and storage options.
 
