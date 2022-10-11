@@ -4,6 +4,6 @@ Code and Directions for **Learning Lab** assignments in Stanford Course BUS 282 
 
 * **Data Pipeline Learning Lab:** A simple script that demonstrates an example data pipeline. This example includes the code, dependencies, API call, and storage options.
 
-* **Build a Model with Data Learning Lab:** Training and classification model with data collected from the data pipeline. This example includes the training dataset, model training code, model evaluation, and model deployment example.
+* **Build a Model with Data Learning Lab:** Training a classification model with data collected from the data pipeline. This example includes the training dataset, model training code, model evaluation, and model deployment example.
 
 * **Final Project:** The instructions to build and deploy a simple end-to-end data product. This product (web application) includes a data pipeline, ML model, and deployment pipeline.

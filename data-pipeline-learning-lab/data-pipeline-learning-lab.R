@@ -2,7 +2,8 @@
 # Data Pipeline Example
 # by Isaac J. Faber
 ####################################################
-
+# Answer the questions in this script as you go. Then adjust the code to solve the problem at the end.
+#
 # A data pipeline is a scripted or automated movement of data from a sensor or
 # data storage system to another.
 # 
@@ -46,8 +47,11 @@ api_url <- paste0(url,'lat=',lat,'&lon=',lon,'&units=',units,'&appid=',api_key)
 api_response <- jsonlite::fromJSON(api_url, flatten = TRUE)
 
 str(api_response)
+# Question 1: In your own words what happened during this 'Extract' step and what 
+# problems might you encournter when setting something like this up?
+# Answer: 
 
-# step 2 Transform the data
+# step three Transform the data
 # now that we have the data from the API we want to manipulate it into something we can use
 # in our case for now we only care about temp, pressure, dt (date time in unix, UTC)
 
@@ -56,8 +60,10 @@ api_data <- data.frame(temp = api_response$main$temp,
                        dt = api_response$dt)
 
 str(api_data)
-
-# step 3 Load the data
+# Question 2: Why does the data need to be 'Transformed' like we did here?
+# Answer:
+#
+# step four Load the data
 # with the data manipulated into the format you want to keep now you need to store it somewhere
 # there are, again two, broad options here. Store it as a raw file, or write it into a database.
 # here is an example of storing it as a text file (comma separated values)
@@ -78,8 +84,14 @@ dbGetQuery(con,'SELECT * FROM weather')
 
 dbDisconnect(con)
 
+# Question 3: In this section of the code we 'Loaded' the data into a small local database. What are some
+# important considerations when choosing the type of database? What is an alternative we could have 
+# used here?
+# Answer: 
+#
+
 ################### problem ###########################
-# change step 2 to capture one more piece of data from the api_response and write it to the file system
+# change step three to capture one more piece of data from the api_response and write it to the file system
 
 api_data <- data.frame(temp = api_response$main$temp,
                        pressure = api_response$main$pressure,
@@ -88,4 +100,7 @@ api_data <- data.frame(temp = api_response$main$temp,
 
 write.csv(api_data, file = paste0('weather-data-new',Sys.Date()))
 
-# download and submit this script when you are complete
+# Question 4: What is the difference in how the data was saved in the problem vs. step four above?
+# Answer:
+#
+# download (or copy/paste) and submit this script as a text file when you are complete
